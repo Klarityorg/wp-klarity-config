@@ -1,0 +1,11 @@
+#!/bin/bash
+# This file's path on production is /data/wordpress/htdocs/wp-content/plugins/klarity-*/.git/hooks/post-receive
+
+cd ..
+if [ -f package.json ]; then
+    npm install
+    npm run build
+    echo -e "The plugin has been built."
+else
+    echo -e "The plugin wasn't built because it doesn't have a package.json"
+fi

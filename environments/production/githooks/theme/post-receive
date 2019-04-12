@@ -1,0 +1,4 @@
+#!/bin/bash
+# This file's path on production is /data/wordpress/htdocs/wp-content/themes/klarity/.git/hooks/post-receive
+
+/data/wordpress/scripts/build-theme.sh htdocs

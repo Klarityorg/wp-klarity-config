@@ -1,0 +1,7 @@
+.idea
+.sass-cache
+environments/production/.env
+dump.sql
+/*.zip
+node_modules
+wp/wp-content/uploads/**/*

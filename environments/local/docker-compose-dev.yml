@@ -1,0 +1,38 @@
+version: '3.3'
+
+services:
+  db:
+   image: mariadb:10.0
+   volumes:
+     - db_data_mariadb:/var/lib/mysql
+   restart: always
+   ports:
+     - "3306:3306"
+   environment:
+     MYSQL_ROOT_PASSWORD: somewordpress
+     MYSQL_DATABASE: wordpress
+     MYSQL_USER: wordpress
+     MYSQL_PASSWORD: wordpress
+
+  wordpress:
+   depends_on:
+     - db
+   build:
+     context: .
+     dockerfile: Dockerfile-dev
+   ports:
+     - "8000:80"
+   restart: always
+   volumes:
+    - ../../scripts:/home
+    - ../../wp:/var/www/html:z
+    - ./php.xdebug.ini:/usr/local/etc/php/php.ini:z
+   command: sh -c '(chmod -R +x /home && /home/build-plugins.sh &); apache2-foreground'
+   environment:
+     WORDPRESS_DB_HOST: db:3306
+     WORDPRESS_DB_USER: wordpress
+     WORDPRESS_DB_PASSWORD: wordpress
+     XDEBUG_CONFIG: remote_host=$HOST_IP
+     WORDPRESS_DEBUG: 'true'
+volumes:
+    db_data_mariadb: {}

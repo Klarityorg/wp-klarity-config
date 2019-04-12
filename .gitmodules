@@ -1,0 +1,33 @@
+[submodule "wp/wp-content/plugins/klarity-action-block"]
+	path = wp/wp-content/plugins/klarity-action-block
+	url = https://github.com/Klarityorg/wp-plugin-action-block
+[submodule "wp/wp-content/plugins/klarity-cases-overview-block"]
+	path = wp/wp-content/plugins/klarity-cases-overview-block
+	url = https://github.com/Klarityorg/wp-plugin-cases-overview-block
+[submodule "wp/wp-content/plugins/klarity-latest-posts-block"]
+	path = wp/wp-content/plugins/klarity-latest-posts-block
+	url = https://github.com/Klarityorg/wp-plugin-latest-posts-block
+[submodule "wp/wp-content/plugins/klarity-message-action-block"]
+	path = wp/wp-content/plugins/klarity-message-action-block
+	url = https://github.com/Klarityorg/wp-plugin-message-action-block
+[submodule "wp/wp-content/plugins/klarity-progress-bar-block"]
+	path = wp/wp-content/plugins/klarity-progress-bar-block
+	url = https://github.com/Klarityorg/wp-plugin-progress-bar-block
+[submodule "wp/wp-content/plugins/klarity-question-answer-block"]
+	path = wp/wp-content/plugins/klarity-question-answer-block
+	url = https://github.com/Klarityorg/wp-plugin-question-answer-block
+[submodule "wp/wp-content/plugins/klarity-read-more-block"]
+	path = wp/wp-content/plugins/klarity-read-more-block
+	url = https://github.com/Klarityorg/wp-plugin-read-more-block
+[submodule "wp/wp-content/plugins/klarity-section-block"]
+	path = wp/wp-content/plugins/klarity-section-block
+	url = https://github.com/Klarityorg/wp-plugin-section-block
+[submodule "wp/wp-content/plugins/klarity-vimeo-wrapper-block"]
+	path = wp/wp-content/plugins/klarity-vimeo-wrapper-block
+	url = https://github.com/Klarityorg/wp-plugin-vimeo-wrapper-block
+[submodule "wp/wp-content/themes/klarity"]
+	path = wp/wp-content/themes/klarity
+	url = https://github.com/Klarityorg/wp-theme-klarity
+[submodule "wp/wp-content/plugins/klarity-remove-comments-ip"]
+	path = wp/wp-content/plugins/klarity-remove-comments-ip
+	url = https://github.com/Klarityorg/wp-plugin-remove-comments-ip.git
