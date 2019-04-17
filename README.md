@@ -38,3 +38,18 @@ When you want to publish an update for a plugin :
 ```(cd wp/wp-content/plugins/<plugin-name> && git push && git push --tags)```
 - Run the `commit-to-svn.sh` script with the plugin's directory name in argument :
 ```./environments/wordpress-com/commit-to-svn.sh <plugin-name>```
+
+
+## Notes for WP-Konsulterna - Deployment of theme to (jesuisanas) Production on Seravo ##
+
+- Update environments/production/.env.dist with the required SSH information.
+- Update submodules:
+```(git submodule update --init --recursive --remote)```
+- Go to the klarity directory:
+```(cd wp/wp-content/themes/klarity)```
+- Git pull to latest repo version
+```(git pull)```
+- Return to root folder:
+```(cd ../../../../)```
+- Run following script:
+```( ./environments/production/deploy-jesuisanas.sh)```
