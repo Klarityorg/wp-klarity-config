@@ -19,4 +19,11 @@ addGitRemoteAndPush() {
     git push ${remoteName} master
 }
 
+# Update plugins on remote
+#cd ${ROOTDIR}/wp/wp-content/plugins
+#for pluginName in `ls | grep klarity-`; do
+#    (addGitRemoteAndPush production-plugin-${pluginName} wp/wp-content/plugins/${pluginName} htdocs/wp-content/plugins/${pluginName})
+#done
+
+# Update theme on remote
 (addGitRemoteAndPush production-theme wp/wp-content/themes/klarity htdocs/wp-content/themes/klarity)
